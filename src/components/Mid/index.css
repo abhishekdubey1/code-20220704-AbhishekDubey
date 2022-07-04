@@ -133,9 +133,11 @@
     flex-direction: column;
     margin-top: 0;
     width: 100%;
+    max-width: 300px;
   }
   .form-input {
-    padding: 2px 25px;
+    padding: 12px 25px;
+    margin-bottom: 8px;
   }
   .form-input input {
     font-size: 14px;

@@ -1,5 +1,13 @@
 import { RiArrowDownSLine } from "react-icons/ri";
 import "./index.css";
+
+export const scrollInto = (className) => () => {
+  const el = document.querySelector(className);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default () => {
   return (
     <section className="mid-section">
@@ -46,7 +54,7 @@ export default () => {
           </div>
         </form>
         <div className="btn btn-down">
-          <button>
+          <button onClick={scrollInto(".explore")}>
             <RiArrowDownSLine />
           </button>
         </div>

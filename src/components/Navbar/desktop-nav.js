@@ -1,4 +1,11 @@
 import { RiArrowDownSLine } from "react-icons/ri";
+import { scrollInto } from "../Mid/index";
+
+const mountedStyle = { animation: "inAnimation 250ms ease-in" };
+const unmountedStyle = {
+  animation: "outAnimation 270ms ease-out",
+  animationFillMode: "forwards",
+};
 
 export default () => {
   return (
@@ -15,10 +22,13 @@ export default () => {
   );
 };
 
-export const NavElements = ({ border } = { border: "" }) => (
-  <ul>
-    <li>Explore</li>
-    <li>About Us</li>
+export const NavElements = ({ border, open, animate } = { border: "" }) => (
+  <ul
+    style={!animate ? {} : open ? mountedStyle : unmountedStyle}
+    className="nav-elements"
+  >
+    <li onClick={scrollInto(".explore")}>Explore</li>
+    <li onClick={scrollInto(".about")}>About Us</li>
     <li>
       Cities
       <RiArrowDownSLine />

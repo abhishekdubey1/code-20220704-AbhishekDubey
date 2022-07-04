@@ -5,6 +5,7 @@ import { NavElements } from "./desktop-nav";
 export default () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen((s) => !s);
+
   return (
     <nav>
       <ul className="navbar navbar-mobile">
@@ -30,7 +31,7 @@ export default () => {
             </svg>
           )}
         </div>
-        {open && <NavElements border="border-white" />}
+        {open && <NavElements border="border-white" open={open} />}
       </ul>
     </nav>
   );
