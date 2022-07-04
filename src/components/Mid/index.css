@@ -1,0 +1,160 @@
+.head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../assets/bg-img.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 98vh;
+  color: var(--white);
+  position: relative;
+
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  height: 30%;
+  text-align: center;
+  font-size: 40px;
+  flex-grow: 1;
+}
+
+.form-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-form {
+  display: flex;
+
+  display: flex;
+  padding: 16px;
+  margin-top: 16vh;
+  border-radius: 40px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  min-height: -moz-fit-content;
+  padding: 20px 15px;
+  margin: 5px;
+  max-height: 40px;
+}
+
+.form-input input {
+  margin-top: 5px;
+  outline: none;
+  border: none;
+  font-family: "Ubuntu" "Exo";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 22px;
+  color: #000000;
+  width: 100%;
+}
+
+.form-input label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6d6d6d;
+  width: 100%;
+}
+
+.btn-search button {
+  color: var(--white);
+  font-size: 28px;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  padding: 22px 15px;
+  margin: 5px;
+  width: 250px;
+  position: relative;
+}
+.btn-search button svg {
+  position: absolute;
+  left: 40px;
+  top: 22px;
+}
+.btn-down {
+  position: absolute;
+  bottom: 0vh;
+  font-size: 50px;
+}
+.btn-down button {
+  border: 0;
+  background: transparent;
+  color: white;
+}
+
+.wave {
+  position: absolute;
+  bottom: -20px;
+  width: 100vw;
+}
+.wave svg {
+  width: 100vw;
+}
+
+@media (max-width: 900px) {
+  .head {
+    height: 100vh;
+    grid-template-rows: 1fr 8fr;
+  }
+  .head::after {
+    left: -340px;
+  }
+  .header {
+    text-align: center;
+    font-size: 20px;
+    flex-grow: 1;
+  }
+  .form-container {
+    padding: 0 26px;
+  }
+  .main-form {
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+  }
+  .form-input {
+    padding: 2px 25px;
+  }
+  .form-input input {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .form-input label {
+    font-size: 12px;
+  }
+  .btn-search {
+    padding: 0 8px 0 0;
+  }
+  .btn-search button {
+    font-size: 24px;
+    padding: 12px 15px;
+    width: 100%;
+  }
+  .btn-search button svg {
+    left: 70px;
+    top: 12px;
+    width: 26px;
+  }
+}

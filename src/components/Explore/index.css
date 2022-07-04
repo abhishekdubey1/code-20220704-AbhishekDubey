@@ -1,0 +1,48 @@
+.explore .tile-footer {
+  width: 80%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tile-footer-details {
+  min-width: 65%;
+}
+
+.explore .desc {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  margin-bottom: 15px;
+}
+
+.btn-action button {
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.tile-price span,
+.tile-area span {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding: 6px 10px;
+  border-radius: 6px;
+}

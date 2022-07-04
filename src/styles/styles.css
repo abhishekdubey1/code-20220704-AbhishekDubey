@@ -1,0 +1,74 @@
+html {
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --primary: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+}
+body {
+  font-family: "Exo 2";
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+.main-section {
+  padding: 10% 8% 0;
+}
+
+.title {
+  margin-bottom: 5vh;
+}
+.title h1 {
+  font-size: 60px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  margin: 0 0 10px;
+  line-height: 110%;
+}
+.title h3 {
+  font-size: 16px;
+  margin-left: 5px;
+  line-height: 110%;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tile {
+  position: relative;
+  margin: 20px 5%;
+  flex-grow: 1;
+  max-width: 30vw;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+.tile-footer {
+  position: absolute;
+}
+.tile-img {
+  height: 100%;
+}
+
+.tile-img img {
+  width: 100%;
+  height: 100%;
+}
